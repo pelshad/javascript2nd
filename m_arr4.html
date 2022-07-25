@@ -29,7 +29,49 @@
     {name : '장보고', kor: 80, eng:98, math:91}
     ];
 
-    const tbody = document.querySelector('tbody');
+    
+    const tbody = document.queryselector('tbody');
+
+    arr.forEach(item => {
+        let tr = document.createElement('tr');
+        tbody.apend(tr);
+        let sumScore = item.kor + item.eng + item.math;
+        tr.innerHTML = `
+        <td>${item.name}</td>
+        <td>${item.kor}</td>
+        <td>${item.eng}</td>
+        <td>${item.math}</td>
+        <td>${sumScore}</td>`
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*const tbody = document.querySelector('tbody');
     const scoreSumObj = {
         kor:0,
         eng:0,
@@ -77,5 +119,7 @@
         </tr>`
         tbody.appendChild(row);
     }*/
+
+
 </script>
 </html>
